@@ -1,0 +1,23 @@
+.form {
+  display: grid;
+  margin-top: 2rem;
+}
+
+.form input {
+  border: 1px solid var(--Grey);
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+  transition: border-color 150ms;
+}
+
+.form input:focus {
+  outline: 0;
+  border-color: hsl(235, 18%, 26%);
+}
+
+.form.form--invalid input {
+  border-color: var(--Tomato);
+  background-color: hsla(4, 100%, 67%, 0.2);
+  color: var(--Tomato);
+}

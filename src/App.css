@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+.list li {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.form-card {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  max-width: 900px;
+}
+
+.form-card__content {
+  position: relative;
+  padding: 0 2.5rem;
+}
+
+.form-card__content h1 {
+  color: var(--Charcoal-grey);
+}
+
+.images {
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .form-card {
+    display: grid;
+    padding: 0;
+    border-radius: 0;
+  }
+  .form-card__content {
+    order: 1;
+    padding: 2rem 1.5rem;
+  }
+}

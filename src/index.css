@@ -1,0 +1,46 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --Tomato: rgb(255, 98, 87);
+  --Dark-slate-grey: hsl(234, 29%, 20%);
+  --Charcoal-grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  transition: all 0.3s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  font-family: inherit;
+  place-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: var(--Dark-slate-grey);
+}
+
+button {
+  font-family: inherit;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 0;
+}
